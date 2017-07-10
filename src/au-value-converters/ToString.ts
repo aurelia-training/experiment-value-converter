@@ -1,4 +1,7 @@
-export class ToStringValueConverter {
+import {valueConverter} from "aurelia-framework";
+
+@valueConverter("toString")
+export class ToString {
   toView(input:Number) {
     return input.toString();
   }

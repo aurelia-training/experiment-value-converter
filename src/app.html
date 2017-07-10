@@ -1,11 +1,11 @@
 <template>
 
   <!-- simple number-to-string value converter -->
-  <require from="./au-value-converters/ToStringValueConverter"></require>
+  <require from="./au-value-converters/ToString"></require>
   <input value.two-way="number | toString" />
 
   <!-- currency converter -->
-  <require from="./au-value-converters/ToCurrencyValueConverter"></require>
+  <require from="./au-value-converters/ToCurrency"></require>
   <p>${number | toCurrency:currencyFormat}</p>
   <select value.bind="currencyFormat">
     <option value="AED">AED</option>
