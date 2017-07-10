@@ -1,5 +1,8 @@
 export class ToStringValueConverter {
-  toView(value:any) {
-    return value.toString();
+  toView(input:Number) {
+    return input.toString();
+  }
+  fromView(input:string) {
+    return parseFloat(input);
   }
 }
